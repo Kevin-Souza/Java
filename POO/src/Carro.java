@@ -9,23 +9,23 @@
  * @author kevin
  */
 public class Carro {
-    String NomeC;
-    String Fabricante;
-    int Ano;
-    int Modelo;
-    String Cor;
-    String Placa;
-    int NumeroPortas;
+    private String NomeC;
+    private String Fabricante;
+    private int Ano;
+    private int Modelo;
+    private String Cor;
+    private String Placa;
+    private int NumeroPortas;
     
     //metodos
     void imprimir(){
-        System.out.println("Nome: "+NomeC);
-        System.out.println("Fabricante: "+Fabricante);
-        System.out.println("Ano: "+Ano);
-        System.out.println("Modelo: "+Modelo);
-        System.out.println("Postas: "+NumeroPortas);
-        System.out.println("Cor: "+Cor);
-        System.out.println("Placa: "+Placa);
+        System.out.println("Nome: "+ getNomeC());
+        System.out.println("Fabricante: "+getFabricante());
+        System.out.println("Ano: "+getAno());
+        System.out.println("Modelo: "+getModelo());
+        System.out.println("Postas: "+getNumeroPortas());
+        System.out.println("Cor: "+getCor());
+        System.out.println("Placa: "+getPlaca());
     }
     
     void andarFrente(){
@@ -44,7 +44,48 @@ public class Carro {
         System.out.println("Farol Desligado.");
     }
     
-    
+    public String getNomeC(){
+        return NomeC;
+    }
+    public void setNomeC(String NomeC){
+        this.NomeC = NomeC;
+    }
+    public String getFabricante(){
+        return Fabricante;
+    }
+    public void setFabricante(String Fabricante){
+        this.Fabricante = Fabricante;
+    }
+    public int getAno(){
+        return Ano;
+    }
+    public void setAno(int Ano){
+        this.Ano = Ano;
+    }
+    public int getModelo(){
+        return Modelo;
+    }
+    public void setModelo(int Modelo){
+        this.Modelo = Modelo;
+    }
+    public int getNumeroPortas(){
+        return NumeroPortas;
+    }
+    public void setNumeroPortas(int NumeroPortas){
+        this.NumeroPortas = NumeroPortas;
+    }
+    public String getCor(){
+        return Cor;
+    }
+    public void setCor(String Cor){
+        this.Cor = Cor;
+    }
+    public String getPlaca(){
+        return Placa;
+    }
+    public void setPlaca(String Placa){
+        this.Placa = Placa;
+    }
     
     
 }

@@ -16,11 +16,11 @@ public class TestePessoa {
         Pessoa p1 = new Pessoa();
         
         //Usar ATRIBUTOS do objeto P1
-        p1.nome = "João da Silva";
-        p1.idade = 22;
-        p1.sexo = 'M';
-        p1.altura = 1.78f;
-        p1.peso = 78.50f;
+        p1.setNome("João da Silva");
+        p1.setIdade(22);
+        p1.setSexo('M');
+        p1.setAltura(1.78f);
+        p1.setPeso(78.50f);
         
         // Usar métodos do objeto P1
         p1.imprimir();
@@ -31,11 +31,11 @@ public class TestePessoa {
         Pessoa p2 = new Pessoa();
         
         //Usar ATRIBUTOS do objeto P2
-        p2.nome = "Ana Maria";
-        p2.idade = 34;
-        p2.sexo = 'F';
-        p2.altura = 1.62f;
-        p2.peso = 59.00f;
+        p2.setNome("Ana Maria");
+        p2.setIdade(34);
+        p2.setSexo('F');
+        p2.setAltura(1.62f);
+        p2.setPeso(59.00f);
         
         // Usar Métodos do objeto P2
         p2.imprimir();
@@ -46,11 +46,11 @@ public class TestePessoa {
         Pessoa p3 = new Pessoa();
         
         //Usar ATRIBUTOS do objeto P3
-        p3.nome = "Isabella";
-        p3.idade = 12;
-        p3.sexo = 'F';
-        p3.altura = 1.42f;
-        p3.peso = 38.50f;
+        p3.setNome("Isabella");
+        p3.setIdade(12);
+        p3.setSexo('F');
+        p3.setAltura(1.42f);
+        p3.setPeso(38.50f);
         
         // Usar Métodos do objeto P3
         p3.imprimir();
