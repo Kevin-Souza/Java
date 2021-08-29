@@ -17,6 +17,8 @@ public class Carro {
     private String Placa;
     private int NumeroPortas;
     
+    
+    
     //metodos
     void imprimir(){
         System.out.println("Nome: "+ getNomeC());
@@ -32,7 +34,7 @@ public class Carro {
         System.out.println("Andar pra frente...");
     }
     
-    void ligar(){
+    void ligarCarro(){
         System.out.println("Ligar o Carro...");
     }
     

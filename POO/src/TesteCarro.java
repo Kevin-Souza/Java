@@ -28,7 +28,7 @@ public class TesteCarro {
         //Usar métodos do objeto c1
         c1.imprimir();
         c1.LigarFarol();
-        c1.ligar();
+        c1.ligarCarro();
         
         
         
@@ -68,7 +68,7 @@ public class TesteCarro {
         
         //Usar métodos do objeto c1
         c3.imprimir();
-        c3.ligar();
+        c3.ligarCarro();
         c3.andarFrente();
         
     }
