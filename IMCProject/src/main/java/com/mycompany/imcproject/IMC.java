@@ -21,7 +21,17 @@ public class IMC {
         input = JOptionPane.showInputDialog("Insera seu peso:");
         peso = Double.valueOf(input);
         total = peso / (altura*altura);
-        JOptionPane.showMessageDialog(null, "Seu IMC é de: " +total);
+        System.out.println(+total);
+        if (total < 18.5){
+        //JOptionPane.showMessageDialog(null, "Seu IMC é igual á: "+total+", categorizado como MAGREZA");
+        JOptionPane.showMessageDialog(null, "Seu IMC é igual á: "+total+", categorizado como MAGREZA" ,input, JOptionPane.WARNING_MESSAGE);
+        } else if (total >= 18.5 && total <= 24.9){
+            JOptionPane.showMessageDialog(null, "Seu IMC é igual á: "+total+", categorizado como NORMAL");
+        } else if (total >= 25.0 && total <= 29.9 ){
+            JOptionPane.showMessageDialog(null, "Seu IMC é igual á: "+total+", categorizado como SOPREPESO",input,JOptionPane.WARNING_MESSAGE);
+        } else if (total >= 30 && total <= 39.9){
+            JOptionPane.showMessageDialog(null,"Seu IMC é igual á: "+total+", categorizado como OBESIDADE",input,JOptionPane.WARNING_MESSAGE);
+        }   
     }
     
     
