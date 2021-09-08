@@ -17,6 +17,7 @@ public class Agenda {
     public int getTelefone() {
         return telefone;
     }
+
     public void setTelefone(int telefone) {
         this.telefone = telefone;
     }
