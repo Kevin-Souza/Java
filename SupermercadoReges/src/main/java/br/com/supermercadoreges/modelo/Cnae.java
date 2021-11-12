@@ -1,19 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package br.com.supermercadoreges.modelo;
 
 import java.util.ArrayList;
 
+/**
+ *
+ * @author Administrador
+ */
 public class Cnae {
 
     private String codigo;
     private String descricao;
 
+    
+    
     public Cnae(String pCodigo, String pDescricao) {
         this.codigo = pCodigo;
-        this.descricao = pDescricao;
+        this.descricao = pDescricao;       
+        
     }
 
     public ArrayList<Cnae> ObterCnaes() {
-
+        
         ArrayList<Cnae> lstCnaes = new ArrayList<Cnae>();
         lstCnaes.add(new Cnae("0111-3/01", "Cultivo de arroz"));
         lstCnaes.add(new Cnae("0111-3/02", "Cultivo de milho"));
@@ -1321,9 +1333,3 @@ public class Cnae {
         return lstCnaes;
     }
 }
-
-
-
-
-
-

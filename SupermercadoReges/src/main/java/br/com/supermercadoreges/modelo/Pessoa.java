@@ -1,36 +1,67 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package br.com.supermercadoreges.modelo;
 
+
+import java.util.Calendar;
 import java.util.Date;
 
+
 public abstract class Pessoa {
-    private String id;
-    private String nome;
+
+    
+    private int id;    
+    private String nome;      
     private String telefone;
     private String email;
     private String documento;
-    private Date dataNascimento;
-    private Endereco endereco;
+    private Calendar dataNascimento;    
+    private  Endereco endereco; 
 
-    public Pessoa(String Nome,  String Documento){
-        this.nome = Nome;
-        this.documento = Documento;
-
+   
+    
+    
+    //CONSTRUTOR DEFAULT
+     public Pessoa() {}
+    
+     
+     //CONSTRUTOR SOMENTE COM NOME E DOCUMENTO
+     public Pessoa(String pNome, String pDocumento){
+        this.nome = pNome;        
+        this.documento = pDocumento;       
+        
     };
-
-    public Pessoa(String Nome, String Telefone, String Documento, Date DataNascimento, Endereco Endereco){
-        this.nome = Nome;
-        this.telefone = Telefone;
-        this.documento = Documento;
-        this.dataNascimento = DataNascimento;
-        this.endereco = Endereco;
+     
+      //CONSTRUTOR COM DOCUMENTO E TELEFONE
+      public Pessoa(String pNome, String pDocumento,String pTelefone){
+        this.nome = pNome;
+        this.documento = pDocumento;      
+        this.telefone = pTelefone;        
+    };              
+     
+     
+     //CONSTRUTOR COMPLETO
+      public Pessoa(String pNome, String pTelefone, String pDocumento, Calendar pDataNascimento, Endereco pEndereco){
+        this.nome = pNome;
+        this.telefone = pTelefone;
+        this.documento = pDocumento;
+        this.dataNascimento = pDataNascimento;
+        this.endereco = pEndereco;        
     };
+    
+    
+    
+   
+     public int getId() {
+        return id;
+    }
 
-
-
-
-
-
-
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getNome() {
         return nome;
     }
@@ -63,11 +94,11 @@ public abstract class Pessoa {
         this.documento = documento;
     }
 
-    public Date getDataNascimento() {
+    public Calendar getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(Calendar dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -77,13 +108,7 @@ public abstract class Pessoa {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    }       
+                 
+    
 }

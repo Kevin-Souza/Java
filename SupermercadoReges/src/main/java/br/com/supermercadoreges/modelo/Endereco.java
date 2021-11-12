@@ -1,7 +1,8 @@
 package br.com.supermercadoreges.modelo;
 
 public class Endereco {
-    private String id;
+
+    private int id;
     private String logradouro;
     private String bairro;
     private String cep;
@@ -10,18 +11,35 @@ public class Endereco {
     private String numero;
     private String uf;
 
+    
+    //CONSTRUTOR DEFAULT
+    public Endereco()
+    {}
+    //CONSTRUTOR COMPLETO
+    public Endereco(String pLogradouro, String pBairro, String pCep, String pCidade, String pComplemento, String pNumero, String pUf) {
+        this.logradouro = pLogradouro;
+        this.bairro = pBairro;
+        this.cep = pCep;
+        this.cidade = pCidade;
+        this.complemento = pComplemento;
+        this.numero = pNumero;
+        this.uf = pUf;
+    }         
+    
+    public int getId() {
+        return id;
+    }
 
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
+    public void setId(int id) {
+        this.id = id;
     }
-    public String getLogradouro() {
-        return logradouro;
-    }
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
-    }
+
     public String getBairro() {
         return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
     }
 
     public String getCep() {
@@ -64,11 +82,12 @@ public class Endereco {
         this.uf = uf;
     }
 
-    public String getId() {
-        return id;
+    public void setLogradouro(String pLogradouro) {
+        this.logradouro = pLogradouro;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getLogradouro() {
+        return this.logradouro;
     }
+
 }
